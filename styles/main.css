@@ -44,7 +44,7 @@ body {
 }
 
 .logo {
-    width: 60px;
+    width: 170px;
 }
 
 .service-title {
@@ -540,7 +540,7 @@ body {
 
 @media (min-width: 768px) {
     .logo {
-        width: 70px;
+        width: 170px;
     }
 
     .grid {
@@ -577,7 +577,7 @@ body {
     }
 
     .logo {
-        width: 65px;
+        width: 170px;
     }
 
     .grid {
