@@ -341,7 +341,7 @@ body {
     text-align: left;
 }
 
-.space-y-2 > * + * {
+.space-y-2>*+* {
     margin-top: 0.5rem;
 }
 
@@ -362,7 +362,100 @@ body {
 /* Our Plan Style End  */
 
 
+/* Contact Style */
 
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-container img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-container form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.contact-container textarea {
+    border-bottom: 1px solid black;
+    margin-top: 25px;
+}
+
+.contact-container .contact-btn {
+
+    font-size: 0.8rem;
+    width: 80px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: royalblue;
+    /*  */
+    display: inline-block;
+    padding: 16px 80px;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+
+@media (min-width: 600px) {
+    .contact-container {
+        flex-direction: row;
+    }
+
+    .contact-container form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-container input {
+        padding: 10px 50px;
+    }
+
+    .contact-container textarea {
+        padding: 10px 50px;
+    }
+}
+
+
+
+@media (max-width: 599px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-container input {
+        padding: 10px;
+    }
+
+    .contact-container textarea {
+        padding: 10px;
+    }
+
+    .contact-container .small-btn {
+        padding: 12px 50px;
+    }
+}
 
 
 /* Footer Style  */
@@ -428,7 +521,7 @@ body {
 }
 
 .footer-bottom {
-    background-color: #beabab;
+    background-color: #FFF5EE;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
@@ -437,6 +530,8 @@ body {
 .footer-bottom p {
     margin: 0;
 }
+
+
 
 
 
